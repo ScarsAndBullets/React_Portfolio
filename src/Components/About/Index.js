@@ -36,7 +36,7 @@ export default class About extends Component {
             </div> {/* end row */}
           </div> {/* end .main-col */}
         </div>
-      </section> {/* About Section End*/ }
+      </section>
     );
   }
 }
