@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-export default class Header extends Component {
+import React from 'react';
+export default class Header extends React.Component {
   render() {
     return (
       <header id="home">
@@ -17,9 +17,8 @@ export default class Header extends Component {
         </nav> {/* end #nav-wrap */}
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I'm Jonathan Doe.</h1>
-            <h3>I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
-              effective visual identities for companies of all sizes around the globe. Let's <a className="smoothscroll" href="#about">start scrolling</a>
+            <h1 className="responsive-headline">I'm Stewart Brough.</h1>
+            <h3>I'm a Salt Lake City based <span>web developer</span>, <span>content manager</span>, and <span>social media specialist</span> with over a decade of experience in advertising and marketing in the <span>outdoor industry</span> creating effective and engaging customer experiences. Let's <a className="smoothscroll" href="#about">start scrolling </a>
               and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul className="social">
