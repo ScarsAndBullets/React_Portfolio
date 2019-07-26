@@ -1,6 +1,7 @@
 import React from 'react';
 export default class About extends React.Component {
   render() {
+    let resumeData = this.props.resumeData;
     return (
       <section id="about">
         <div className="row">
@@ -9,11 +10,16 @@ export default class About extends React.Component {
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            <p>I was born in raised in Utah, but I've spent several years living in South America and Asia. The world is a beautiful place - I'd love to see all of it, but there is no place like home.
+            <p>
+              {resumeData.roles[0].title}: {resumeData.roles[0].description}<br />
+              {resumeData.roles[1].title}: {resumeData.roles[1].description}<br />
+              {resumeData.roles[2].title}: {resumeData.roles[2].description}<br />
             </p>
-            <p>I am a family man - my amazing wife Becca, is a practicing RN and the mother of our three equally amazing children: Eli, Knox, and Phoebe Jo. Every minute we invest in loving and caring for them pays huge dividends to our happiness.
+            <p>I was born in raised in Utah, but I've spent several years living in South America and Asia.
             </p>
-            <p>I love learning and teaching - there are so many interesting things in this world ranging from natural science to cultural customs. I'm bilingual (English and Spanish), possess an amateur radio license, have served in combat as a U.S. Army Armor Officer, and enjoy the solitude of the mountains as much as I love visiting museums and historical architecture.</p>
+            <p>I am a family man - my amazing wife Becca, is a practicing RN and the mother of our three equally amazing children: Eli, Knox, and Phoebe Jo.
+            </p>
+            <p>I love learning and teaching - I'm bilingual (English and Spanish), a licensed amateur radio operator, served on joint military-diplomatic team in Afghanistan, .</p>
             <div className="row">
               <div className="columns contact-details">
                 <h2>Contact Details</h2>

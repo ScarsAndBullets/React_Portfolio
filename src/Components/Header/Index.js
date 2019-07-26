@@ -1,6 +1,7 @@
 import React from 'react';
 export default class Header extends React.Component {
   render() {
+    let resumeData = this.props.resumeData;
     return (
       <header id="home">
         <nav id="nav-wrap">
@@ -17,8 +18,8 @@ export default class Header extends React.Component {
         </nav> {/* end #nav-wrap */}
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I'm Stewart Brough.</h1>
-            <h3>I'm a Salt Lake City based <span>web developer</span>, <span>content manager</span>, and <span>social media specialist</span> with over a decade of experience in advertising and marketing in the <span>outdoor industry</span> creating effective and engaging customer experiences. Let's <a className="smoothscroll" href="#about">start scrolling </a>
+            <h1 className="responsive-headline">{resumeData.name}</h1>
+            <h3>I'm a {resumeData.location} based <span>{resumeData.roles[0].title}</span>, <span>{resumeData.roles[1].title}</span>, and <span>{resumeData.roles[2].title}</span> with over a decade of experience in advertising and marketing in the outdoor creating effective and engaging customer experiences. Let's <a className="smoothscroll" href="#about">start scrolling </a>
               and learn more <a className="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul className="social">
